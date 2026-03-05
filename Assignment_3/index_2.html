@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Mirage store</title>
+    </head>
+    <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MIRAGE ONLINE SHOP 
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Orders</a></li>
+            </ul>
+            <a href="#cart" class="btn">Shop Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home section -->
+     <section>
+        <div class="product-clasify">
+            <!-- <img class="land-page" src="landing_page_bg.png"> -->
+             <img src="imgs\landing_page_img.png" usemap="#shopmap" class="land-page">
+
+              <!-- Text overlays -->
+            <div class="label electronics">Electronics</div>
+                <div class="label fashion">Fashion</div>
+                <div class="label home">Home Decor</div>
+                <div class="label beauty">Beauty Products</div>
+            </div>
+
+            <map name="shopmap">
+          <!-- Top Left (Electronics) -->
+                <area shape="rect" coords="0,0,610,350" href="electronics.html" alt="Electronics">
+
+            <!-- Top Right (Fashion) -->
+                <area shape="rect" coords="610,0,1220,350" href="fashion.html" alt="Fashion">
+
+            <!-- Bottom Left (Home Decor) -->
+                <area shape="rect" coords="0,350,610,700" href="home.html" alt="Home Decor">
+
+            <!-- Bottom Right (Beauty Products) -->
+                <area shape="rect" coords="610,350,1220,700" href="beauty.html" alt="Beauty Products">
+          </map>
+        </div>
+        
+        
+     </section>
+
+    </body>
+</html>

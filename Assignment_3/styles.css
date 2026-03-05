@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(246, 247, 247);
+    line-height: 1.6;
+    size: 250px 400px;
+    
+}
+
+.vavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo{
+    background-color: rgb(219, 116, 116);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn{
+     padding-left: 20px;
+
+}
+
+.land-page{
+    width: 1220px;
+    height: 700px;
+    position: relative;
+    
+}
+
+.product-clasify {
+  position: relative;
+  width: 1220px;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Position each label in the center of its section */
+
+.electronics {
+  top: 150px;
+  left: 200px;
+}
+
+.fashion {
+  top: 150px;
+  left: 800px;
+}
+
+.home {
+  top: 500px;
+  left: 200px;
+}
+
+.beauty {
+  top: 500px;
+  left: 750px;
+}
