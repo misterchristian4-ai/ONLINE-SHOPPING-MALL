@@ -1,106 +1,187 @@
 <!DOCTYPE html>
 
-<!DOCTYPE html>
 <html>
 <head>
 <title>Home Decor</title>
 <link rel="stylesheet" href="styles.css">
+
 </head>
 
+
+
 <body>
+
+<nav class="navbar">
+    <div class="logo">MIRAGE ONLINE SHOP</div>
+
+        <ul class="nav-links">
+            <li><a href="index_2.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="cart.html">Orders</a></li>
+        </ul>
+    
+    <a href="cart.html" class="btn">Cart (<span id="cart-count">0</span>)</a>
+
+</nav>
+
+    <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
 
 <h1>Beauty Products</h1>
 
 <a href="index_2.html">Back to Home</a>
 
+<div class="shop-layout">
+
+    <aside class="sidebar">
+    <h3>Categories</h3>
+
+    <button onclick="filterCategory('all')">All</button>
+
+    <button onclick="filterCategory('makeup')">
+        Makeup
+    </button>
+
+    <button onclick="filterCategory('skincare')">
+        Skincare
+    </button>
+
+    <button onclick="filterCategory('perfume')">
+        Perfume
+    </button>
+
+    <button onclick="filterCategory('hair')">
+        Hair Products
+    </button>
+</aside>
+</div>
+
 <h3>Makeup</h3>
-<div class="products">
+<div class="products"
+data-category="makeup">
 
 <div class="product">
-<img src="imgs/mk_1.jpg">
+<img src="imgs/mk_1.jpg" onclick="openProduct(
+'makeup',
+300,
+'imgs/mk_1.jpg'
+)">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
-<img src="imgs/mk_2.jpg">
+<img src="imgs/mk_2.jpg" >
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/mk_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/mk_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/mk_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 </div>
 
 
 <h3>Skincare</h3>
-<div class="products">
+<div class="products"
+data-category="Skincare">
 
 <div class="product">
 <img src="imgs/sk_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/sk_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/sk_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/sk_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/sk_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 </div>
 
 
 <h3>Perfume</h3>
-<div class="products">
+<div class="products"
+    data-category="perfume">
 
 <div class="product">
 <img src="imgs/pf_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/pf_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/pf_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/pf_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 <div class="product">
 <img src="imgs/pf_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
+
 </div>
 
 </div>
@@ -110,32 +191,41 @@
 <div class="products">
 
 <div class="product">
-<img src="imgs/h.p_1.jpg">
+<img src="imgs/h.p_1.jpg"
+data-category="makeup">
+
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/h.p_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/h.p_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/h.p_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/h.p_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 </div>
 
+
+<script src="script.js"></script>
 
 </body>
 </html>

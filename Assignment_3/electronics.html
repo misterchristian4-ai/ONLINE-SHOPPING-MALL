@@ -5,23 +5,45 @@
 <head>
 <title>Home Decor</title>
 <link rel="stylesheet" href="styles.css">
+
+ <nav class="navbar">
+    <div class="logo">MIRAGE ONLINE SHOP</div>
+
+        <ul class="nav-links">
+            <li><a href="index_2.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+        </ul>
+    
+    <a href="cart.html" class="btn">Cart (<span id="cart-count">0</span>)</a>
+
+    </nav>
 </head>
 
-<body><!DOCTYPE html>
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>Home Decor</title>
-<link rel="stylesheet" href="styles.css">
-</head>
 
 <body>
 
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products...">
+    </div>
 
 <h1>Electronics</h1>
 
 <a href="index_2.html">Back to Home</a>
+
+<div class="shop-layout">
+
+    <aside class="sidebar">
+        <h3>Categories</h3>
+
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('sofa')">Phones</button>
+        <button onclick="filterCategory('table')">Laptops</button>
+        <button onclick="filterCategory('lamp')">Headphones</button>
+        <button onclick="filterCategory('lamp')">Cameras</button>
+    </aside>
+</div>
 
 <h3>Phones</h3>
 <div class="products">
@@ -29,26 +51,31 @@
 <div class="product">
 <img src="imgs/img_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/img_2.png">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/img_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/img_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/img_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 </div>
@@ -56,30 +83,35 @@
 
 <h3>Laptops</h3>
 <div class="products">
-    
+
 <div class="product">
 <img src="imgs/lapImg_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/lampImg_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/lampImg_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/lampImg_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/lampImg_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 </div>
@@ -90,26 +122,31 @@
 <div class="product">
 <img src="imgs/hp_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/hp_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/hp_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/hp_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/hp_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 </div>
@@ -120,29 +157,37 @@
     <div class="product">
 <img src="imgs/cam_1.jpg">
 <p>$300</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/cam_2.jpg">
 <p>$800</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/cam_3.jpg">
 <p>$1200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/cam_4.jpg">
 <p>$500</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 <div class="product">
 <img src="imgs/cam_5.jpg">
 <p>$200</p>
+<button class="add-to-cart" data-name="Sofa" data-price="300">Add to Cart</button>
 </div>
 
 </div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="styles.css">
+
+   <nav class="navbar">
+    <div class="logo">MIRAGE ONLINE SHOP</div>
+
+        <ul class="nav-links">
+            <li><a href="index_2.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li> <a href="admin.html">admin</a></li>
+        </ul>
+    
+    <a href="cart.html" class="btn">Cart (<span id="cart-count">0</span>)</a>
+
+    </nav>
+</head>
+<body>
+
+<h1>Your Cart</h1>
+<a href="index_2.html">← Continue Shopping</a>
+
+<div id="cart-items"></div>
+
+<h2>Total: $<span id="cart-total">0</span></h2>
+
+<button onclick="clearCart()">Clear Cart</button>
+
+
+<a href="checkout.html">
+  <button>Proceed to Checkout</button>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
